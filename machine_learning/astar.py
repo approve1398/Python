@@ -13,11 +13,11 @@ is made.A* also known as the algorithm with brains
 import numpy as np
 
 
-class Cell(object):
+class Cell:
     """
     Class cell represents a cell in the world which have the property
     position : The position of the represented by  tupleof x and y
-    co-ordinates initially set to (0,0)
+    coordinates initially set to (0,0)
     parent : This contains the parent cell object which we visited
     before arrinving this cell
     g,h,f : The parameters for constructing the heuristic function
@@ -45,7 +45,7 @@ class Cell(object):
         print(self.position)
 
 
-class Gridworld(object):
+class Gridworld:
     """
     Gridworld class represents the  external world here a grid M*M
     matrix
